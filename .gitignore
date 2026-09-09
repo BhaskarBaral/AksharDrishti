@@ -1,0 +1,14 @@
+# Python virtualenvs - reinstallable from requirements.txt
+.venv/
+.venv-train/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Training artifacts - checkpoints are large and regenerable by re-running training
+training/output/
+training/datasets/
+
+# Logs
+*.log

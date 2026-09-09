@@ -1,0 +1,28 @@
+Global:
+  model: devanagari_PP-OCRv5_mobile_rec
+  mode: train
+  dataset_dir: C:/Users/Legion/Desktop/AksharDrishti-Model/demo/training/datasets/punjabi
+  device: gpu:0
+  output: C:/Users/Legion/Desktop/AksharDrishti-Model/demo/training/output/punjabi
+CheckDataset:
+  convert:
+    enable: false
+    src_dataset_type: null
+  split:
+    enable: false
+    train_percent: null
+    val_percent: null
+Train:
+  epochs_iters: 20
+  batch_size: 8
+  learning_rate: 0.001
+  pretrain_weight_path: https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams
+  resume_path: null
+  log_interval: 20
+  eval_interval: 1
+  save_interval: 5
+Evaluate:
+  weight_path: C:/Users/Legion/Desktop/AksharDrishti-Model/demo/training/output/punjabi/best_accuracy/best_accuracy.pdparams
+  log_interval: 1
+Export:
+  weight_path: C:/Users/Legion/Desktop/AksharDrishti-Model/demo/training/output/punjabi/best_accuracy/best_accuracy.pdparams

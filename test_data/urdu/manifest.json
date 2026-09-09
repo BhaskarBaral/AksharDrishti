@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "arab_real_0195.jpeg",
+    "groundTruth": "اختصارات",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "arab_real_0036.jpeg",
+    "groundTruth": "میزبانی",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "arab_real_0099.jpeg",
+    "groundTruth": "راہیں",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "arab_real_0186.jpeg",
+    "groundTruth": "شاہراہ",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "arab_real_0024.jpeg",
+    "groundTruth": "انڈیز",
+    "sourceSplit": "train"
+  }
+]

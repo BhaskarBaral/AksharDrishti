@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "gujr_real_0038.jpeg",
+    "groundTruth": "બારી",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "gujr_real_0020.jpeg",
+    "groundTruth": "જયંતીલાલ",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "gujr_real_0030.jpeg",
+    "groundTruth": "મેળવવું",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "gujr_real_0025.jpeg",
+    "groundTruth": "ફાઈનાનસીંગમાં",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "gujr_real_0045.jpeg",
+    "groundTruth": "એડ્વોકેટની",
+    "sourceSplit": "train"
+  }
+]

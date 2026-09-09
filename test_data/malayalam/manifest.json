@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "mlym_real_0105.jpeg",
+    "groundTruth": "രൂപപ്പെടുത്തുകയാണ്",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "mlym_real_0251.jpeg",
+    "groundTruth": "വിശദമാക്കുന്നതിലും",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "mlym_real_0759.jpeg",
+    "groundTruth": "സ്വാഭാവികനേതാക്കളായിരുന്നു",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "mlym_real_0026.jpeg",
+    "groundTruth": "ഉണ്ടാകില്ല",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "mlym_real_0559.jpeg",
+    "groundTruth": "വായനയുമുണ്ടോ",
+    "sourceSplit": "val"
+  }
+]

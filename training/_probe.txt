@@ -1,0 +1,3 @@
+<class 'list'>
+7 <class 'dict'>
+['datasetType', 'languages', 'collectionSource', 'domain', 'license', 'submitter', 'format', 'dpi', 'imageTextType', 'collectionMethod', 'imageFilename', 'groundTruth', 'boundingBox']

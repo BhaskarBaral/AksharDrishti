@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "taml_real_0023.jpeg",
+    "groundTruth": "நிலைப்படுத்துவதற்கும்",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "taml_real_0064.jpeg",
+    "groundTruth": "திருட்டுத்தனமா",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "taml_real_0173.jpeg",
+    "groundTruth": "திருமணங்கள்",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "taml_real_0041.jpeg",
+    "groundTruth": "எதிர்பார்க்கவில்லை",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "taml_real_0048.jpeg",
+    "groundTruth": "எல்லாவெல",
+    "sourceSplit": "train"
+  }
+]

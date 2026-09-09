@@ -1,0 +1,4 @@
+devanagari labels: 1000 unique_chars: 78 dict_size: 568 missing: 0
+tamil labels: 1000 unique_chars: 52 dict_size: 513 missing: 0
+telugu labels: 1000 unique_chars: 63 dict_size: 540 missing: 0
+urdu labels: 1000 unique_chars: 56 dict_size: 716 missing: 0

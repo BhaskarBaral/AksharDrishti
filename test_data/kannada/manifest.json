@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "knda_real_0299.jpeg",
+    "groundTruth": "ಕುರಿತಂತೆಯೂ",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "knda_real_0283.jpeg",
+    "groundTruth": "ತಟ್ಟಿಯಲ್ಲಿಲ್ಲ",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "knda_real_0031.jpeg",
+    "groundTruth": "ನಾಬಾ",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "knda_real_0032.jpeg",
+    "groundTruth": "ಮಾಡುವುದರ",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "knda_real_0036.jpeg",
+    "groundTruth": "ಆಸ್ಪತ್ರೆಯಲ್ಲಿ",
+    "sourceSplit": "train"
+  }
+]

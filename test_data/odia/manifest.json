@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "orya_real_0105.jpeg",
+    "groundTruth": "ତୀର୍ଥଯାତ୍ରୀ",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "orya_real_0655.jpeg",
+    "groundTruth": "ମାଗିଲେ",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "orya_real_0026.jpeg",
+    "groundTruth": "ଅଂଶର",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "orya_real_0090.jpeg",
+    "groundTruth": "ମାଇକ୍ରୋସେଫାଲି",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "orya_real_0115.jpeg",
+    "groundTruth": "ଭାସ୍କରାଚାର୍ଯ୍ୟ",
+    "sourceSplit": "train"
+  }
+]

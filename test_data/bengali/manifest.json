@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "beng_real_0112.jpeg",
+    "groundTruth": "ছোটপর্দায়",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "beng_real_0013.jpeg",
+    "groundTruth": "পনিরের",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "beng_real_0016.jpeg",
+    "groundTruth": "মাশরুমের",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "beng_real_0017.jpeg",
+    "groundTruth": "দপ্তরকেও",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "beng_real_0045.jpeg",
+    "groundTruth": "দলটা",
+    "sourceSplit": "train"
+  }
+]

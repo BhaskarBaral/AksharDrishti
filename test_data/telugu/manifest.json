@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "telu_real_0559.jpeg",
+    "groundTruth": "తరలింపు",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "telu_real_0826.jpeg",
+    "groundTruth": "ఏళ్లూ",
+    "sourceSplit": "val"
+  },
+  {
+    "filename": "telu_real_0007.jpeg",
+    "groundTruth": "బాలకోయిలలు",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "telu_real_0164.jpeg",
+    "groundTruth": "ధాటికి",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "telu_real_0226.jpeg",
+    "groundTruth": "ఫ్యామిలీ",
+    "sourceSplit": "train"
+  }
+]

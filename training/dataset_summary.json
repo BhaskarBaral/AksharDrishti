@@ -1,0 +1,102 @@
+[
+  {
+    "script": "devanagari",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "official:ppocrv5_devanagari_dict.txt",
+    "dict_size": 568,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "tamil",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "official:ppocrv5_ta_dict.txt",
+    "dict_size": 513,
+    "pretrain": "ta_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "telugu",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "official:ppocrv5_te_dict.txt",
+    "dict_size": 540,
+    "pretrain": "te_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "urdu",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "official:ppocrv5_arabic_dict.txt",
+    "dict_size": 747,
+    "pretrain": "arabic_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "bengali",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 72,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "gujarati",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 65,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "kannada",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 67,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "malayalam",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 63,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "odia",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 70,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  },
+  {
+    "script": "punjabi",
+    "raw_total": 1000,
+    "held_out_excluded": 15,
+    "train_n": 887,
+    "val_n": 98,
+    "dict_source": "custom:real-data-chars",
+    "dict_size": 64,
+    "pretrain": "devanagari_PP-OCRv5_mobile_rec_pretrained.pdparams"
+  }
+]

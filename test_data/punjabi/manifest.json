@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "guru_real_0204.jpeg",
+    "groundTruth": "ਕਸ਼ਯਪ",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "guru_real_0028.jpeg",
+    "groundTruth": "ਲੈਣੀਆਂ",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "guru_real_0031.jpeg",
+    "groundTruth": "ਕ੍ਰਿਸ਼ਣ",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "guru_real_0033.jpeg",
+    "groundTruth": "ਕੁਰੇਦੇ",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "guru_real_0096.jpeg",
+    "groundTruth": "ਜੀਵਤ",
+    "sourceSplit": "train"
+  }
+]

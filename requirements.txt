@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pillow
+pytesseract
+jiwer
+easyocr
+paddleocr
+paddlepaddle==3.2.2
+transformers
+sentencepiece
+numpy<2
+
+# torch/torchvision (CUDA build) and paddlepaddle-gpu are installed separately
+# by setup_gpu.ps1 -- their correct wheel depends on the resolved CUDA tag,
+# which isn't expressible as a plain requirements.txt pin.
+#
+# paddlepaddle must be pinned to 3.2.2, not the latest 3.3.x: 3.3.0/3.3.1 have a
+# CPU (oneDNN/PIR) regression that raises NotImplementedError on every predict()
+# call -- https://github.com/PaddlePaddle/Paddle/issues/77340

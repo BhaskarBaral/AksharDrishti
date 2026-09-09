@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "deva_real_0082.jpeg",
+    "groundTruth": "मल्लोय",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "deva_real_0143.jpeg",
+    "groundTruth": "तीन-चौथाई",
+    "sourceSplit": "test"
+  },
+  {
+    "filename": "deva_real_0004.jpeg",
+    "groundTruth": "रहेंगी।",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "deva_real_0014.jpeg",
+    "groundTruth": "क्षणिक",
+    "sourceSplit": "train"
+  },
+  {
+    "filename": "deva_real_0080.jpeg",
+    "groundTruth": "आयत",
+    "sourceSplit": "train"
+  }
+]
