@@ -2,6 +2,7 @@ import numpy as np
 from PIL import Image
 
 from app.engines.base import OCREngine
+from app.layout import RTL_SCRIPTS, sort_reading_order
 
 # script folder name -> PaddleOCR --lang code.
 # PP-OCRv5 only ships an official (non-community) recognition model for these
@@ -19,6 +20,7 @@ class PaddleOCREngine(OCREngine):
     real model load, so we don't want that at import time or per-request."""
 
     name = "paddleocr"
+    supports_page_level = True
 
     def __init__(self):
         self._pipelines: dict[str, object] = {}
@@ -64,3 +66,19 @@ class PaddleOCREngine(OCREngine):
             return " ".join(texts).strip()
         except Exception as e:
             return f"__ERROR__:{e}"
+
+    def recognize_page(self, image: Image.Image, script: str) -> list[dict]:
+        lang = SCRIPT_TO_LANG[script]
+        pipeline = self._get_pipeline(lang)
+        bgr = np.array(image.convert("RGB"))[:, :, ::-1]
+        results = pipeline.predict(bgr)
+
+        items = []
+        for res in results:
+            for poly, text, score in zip(res["rec_polys"], res["rec_texts"], res["rec_scores"]):
+                items.append({
+                    "bbox": [[float(x), float(y)] for x, y in poly],
+                    "text": text,
+                    "confidence": float(score),
+                })
+        return sort_reading_order(items, rtl=script in RTL_SCRIPTS)

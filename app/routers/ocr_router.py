@@ -79,3 +79,35 @@ async def run_on_upload(script: str = Form(...), file: UploadFile = File(...),
 
     results = [{"engine": e.name, "hypothesis": e.recognize(im, script)} for e in engines]
     return {"results": results}
+
+
+@router.post("/run-page-upload")
+async def run_page_upload(script: str = Form(...), file: UploadFile = File(...),
+                           engines: list[str] | None = Form(None)):
+    """Structured page-level extraction (per-line text + bbox + confidence, in
+    reading order) for whichever engines have their own text detector -- see
+    OCREngine.supports_page_level. No ground truth to score against."""
+    candidates = [e for e in engines_for_script(script) if e.supports_page_level]
+    if engines:
+        wanted = set(engines)
+        candidates = [e for e in candidates if e.name in wanted]
+    if not candidates:
+        raise HTTPException(
+            400, f"No page-level-capable engine available for script {script!r}"
+        )
+
+    contents = await file.read()
+    try:
+        im = Image.open(io.BytesIO(contents))
+    except Exception:
+        raise HTTPException(400, "Could not read uploaded file as an image")
+
+    results = []
+    for engine in candidates:
+        lines = engine.recognize_page(im, script)
+        results.append({
+            "engine": engine.name,
+            "lines": lines,
+            "text": "\n".join(l["text"] for l in lines),
+        })
+    return {"results": results}

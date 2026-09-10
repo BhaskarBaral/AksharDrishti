@@ -37,3 +37,11 @@ export function runOnUpload(script, file, engines) {
   engines.forEach((name) => form.append("engines", name));
   return jsonFetch("/api/ocr/run-on-upload", { method: "POST", body: form });
 }
+
+export function runPageUpload(script, file, engines) {
+  const form = new FormData();
+  form.set("script", script);
+  form.set("file", file);
+  (engines || []).forEach((name) => form.append("engines", name));
+  return jsonFetch("/api/ocr/run-page-upload", { method: "POST", body: form });
+}
