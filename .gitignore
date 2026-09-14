@@ -12,3 +12,6 @@ training/datasets/
 
 # Logs
 *.log
+
+# Secrets - real values go in .env (gitignored); see .env.example for the template
+.env

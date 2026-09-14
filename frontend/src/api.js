@@ -38,6 +38,14 @@ export function runOnUpload(script, file, engines) {
   return jsonFetch("/api/ocr/run-on-upload", { method: "POST", body: form });
 }
 
+export function runBenchmark(script, engines, limit) {
+  const form = new FormData();
+  form.set("script", script);
+  form.set("limit", limit);
+  engines.forEach((name) => form.append("engines", name));
+  return jsonFetch("/api/ocr/benchmark", { method: "POST", body: form });
+}
+
 export function runPageUpload(script, file, engines) {
   const form = new FormData();
   form.set("script", script);

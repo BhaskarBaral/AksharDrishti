@@ -3,6 +3,44 @@ import { runPageUpload } from "../api.js";
 import "./playground.css";
 
 const SUPPORTED_SCRIPTS = new Set(["devanagari", "tamil"]);
+const REVIEW_THRESHOLD = 0.75;
+const HIGH_THRESHOLD = 0.9;
+
+function confTier(confidence) {
+  if (confidence >= HIGH_THRESHOLD) return "high";
+  if (confidence >= REVIEW_THRESHOLD) return "med";
+  return "low";
+}
+
+function splitKV(text) {
+  const idx = text.indexOf(":");
+  if (idx === -1 || idx === text.length - 1) return { key: null, value: text };
+  const key = text.slice(0, idx).trim();
+  const value = text.slice(idx + 1).trim();
+  if (!key || !value) return { key: null, value: text };
+  return { key, value };
+}
+
+const VIEW_META = {
+  lines: {
+    title: "Review workspace",
+    desc: "The core operator screen for accuracy-critical work. Every line carries a confidence score, and low-confidence lines surface for correction before approval.",
+    exportLabel: "Export JSON",
+    approveLabel: "Approve page",
+  },
+  fields: {
+    title: "Form field extraction",
+    desc: "Pull structured fields out as key→value pairs instead of raw prose — each one independently scored and editable.",
+    exportLabel: "Export CSV",
+    approveLabel: "Confirm fields",
+  },
+  regions: {
+    title: "Region overlay",
+    desc: "Verification stays spatial: detected regions are drawn back onto the page, coloured by confidence, so you can see exactly where the model was unsure.",
+    exportLabel: "Export JSON",
+    approveLabel: "Approve page",
+  },
+};
 
 export default function DocumentMode({ script }) {
   const [previewSrc, setPreviewSrc] = useState(null);
@@ -14,6 +52,14 @@ export default function DocumentMode({ script }) {
   const [dragActive, setDragActive] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  const [currentFile, setCurrentFile] = useState(null);
+  const [fileName, setFileName] = useState("");
+  const [edits, setEdits] = useState({});
+  const [editingIndex, setEditingIndex] = useState(null);
+  const [panelView, setPanelView] = useState("lines"); // "lines" | "fields" | "regions"
+  const [approved, setApproved] = useState(false);
+  const [showAllBoxes, setShowAllBoxes] = useState(true);
+
   const fileInputRef = useRef(null);
   const supported = SUPPORTED_SCRIPTS.has(script);
 
@@ -24,6 +70,11 @@ export default function DocumentMode({ script }) {
     setSelectedLine(null);
     setStatus("idle");
     setError("");
+    setCurrentFile(null);
+    setFileName("");
+    setEdits({});
+    setEditingIndex(null);
+    setApproved(false);
   }, [script]);
 
   async function runPage(file) {
@@ -48,6 +99,11 @@ export default function DocumentMode({ script }) {
     setImgSize({ w: 0, h: 0 });
     setLines([]);
     setSelectedLine(null);
+    setCurrentFile(file);
+    setFileName(file.name);
+    setEdits({});
+    setEditingIndex(null);
+    setApproved(false);
     runPage(file);
   }
 
@@ -70,10 +126,20 @@ export default function DocumentMode({ script }) {
     };
   }
 
+  function textFor(i) {
+    return edits[i] ?? lines[i].text;
+  }
+
+  function commitEdit(i, value) {
+    setEdits((prev) => ({ ...prev, [i]: value }));
+    setEditingIndex(null);
+  }
+
   const avgConfidence = lines.length
     ? lines.reduce((sum, l) => sum + (l.confidence ?? 0), 0) / lines.length
     : null;
-  const transcript = lines.map((l) => l.text).join("\n");
+  const needsReviewCount = lines.filter((l) => l.confidence < REVIEW_THRESHOLD).length;
+  const transcript = lines.map((_, i) => textFor(i)).join("\n");
 
   async function copyTranscript() {
     try {
@@ -85,6 +151,27 @@ export default function DocumentMode({ script }) {
     }
   }
 
+  function exportJson() {
+    const payload = {
+      script,
+      fileName,
+      approved,
+      lines: lines.map((l, i) => ({ bbox: l.bbox, text: textFor(i), confidence: l.confidence })),
+      text: transcript,
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${(fileName || "document").replace(/\.[^.]+$/, "")}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function reRun() {
+    if (currentFile) runPage(currentFile);
+  }
+
   if (!supported) {
     return (
       <div className="pg-doc-disabled">
@@ -94,8 +181,41 @@ export default function DocumentMode({ script }) {
     );
   }
 
+  const viewMeta = VIEW_META[panelView] ?? VIEW_META.lines;
+
   return (
     <>
+      {status === "done" && (
+        <div className="pg-doc-meta">
+          <div className="s-head pg-doc-shead">
+            <div>
+              <h1 className="title">{viewMeta.title}</h1>
+              <p className="desc">{viewMeta.desc}</p>
+            </div>
+            <div className="pg-doc-actions">
+              {panelView === "regions" && (
+                <button className="ghost" onClick={() => setShowAllBoxes((v) => !v)}>
+                  {showAllBoxes ? "Hide box labels" : "Show box labels"}
+                </button>
+              )}
+              <button className="ghost" onClick={reRun}>Re-run OCR</button>
+              <button onClick={exportJson}>{viewMeta.exportLabel}</button>
+              <button className={approved ? "approved" : "primary"} onClick={() => setApproved(true)} disabled={approved}>
+                {approved ? "Approved" : viewMeta.approveLabel}
+              </button>
+            </div>
+          </div>
+          <div className="pg-doc-tags">
+            <span className="tag">{fileName}</span>
+            <span className="tag">Script: {script}</span>
+            <span className={`tag conf-${confTier(avgConfidence ?? 0)}`}>
+              page avg {avgConfidence != null ? `${(avgConfidence * 100).toFixed(0)}%` : "-"}
+            </span>
+            {needsReviewCount > 0 && <span className="tag conf-low">{needsReviewCount} need review</span>}
+          </div>
+        </div>
+      )}
+
       <section className="pg-stage">
         <div
           className={`pg-dropzone${dragActive ? " drag" : ""}${previewSrc ? " has-preview" : ""}`}
@@ -134,13 +254,21 @@ export default function DocumentMode({ script }) {
                 lines.map((l, i) => (
                   <div
                     key={i}
-                    className={`pg-doc-box${i === selectedLine ? " selected" : ""}`}
+                    className={`pg-doc-box${i === selectedLine ? " selected" : ""}${
+                      l.confidence < REVIEW_THRESHOLD ? " needs-review" : ""
+                    }`}
                     style={boxStyle(l.bbox)}
                     onClick={(e) => {
                       e.stopPropagation();
                       setSelectedLine(i);
                     }}
-                  />
+                  >
+                    {panelView === "regions" && showAllBoxes && (
+                      <span className={`pg-doc-box-label conf-${confTier(l.confidence)}`}>
+                        {(l.confidence * 100).toFixed(0)}%
+                      </span>
+                    )}
+                  </div>
                 ))}
             </div>
           )}
@@ -166,21 +294,98 @@ export default function DocumentMode({ script }) {
                   <span>avg confidence</span>
                 </div>
               </div>
-              <div className="pg-doc-lines">
-                {lines.map((l, i) => (
-                  <div
-                    key={i}
-                    className={`pg-doc-line${i === selectedLine ? " selected" : ""}`}
-                    onClick={() => setSelectedLine(i)}
-                  >
-                    <span className="pg-doc-line-idx">{i + 1}</span>
-                    <span className="pg-doc-line-text">{l.text || <em>(empty)</em>}</span>
-                    <span className={`cer-badge ${l.confidence >= 0.7 ? "cer-good" : "cer-bad"}`}>
-                      {(l.confidence * 100).toFixed(0)}%
-                    </span>
-                  </div>
-                ))}
+
+              <div className="pg-doc-view-toggle">
+                <button className={panelView === "lines" ? "active" : ""} onClick={() => setPanelView("lines")}>
+                  Lines
+                </button>
+                <button className={panelView === "fields" ? "active" : ""} onClick={() => setPanelView("fields")}>
+                  Form fields
+                </button>
+                <button className={panelView === "regions" ? "active" : ""} onClick={() => setPanelView("regions")}>
+                  Regions
+                </button>
               </div>
+
+              {panelView === "lines" && (
+                <div className="pg-doc-lines">
+                  {lines.map((l, i) => (
+                    <div
+                      key={i}
+                      className={`pg-doc-line${i === selectedLine ? " selected" : ""}${
+                        l.confidence < REVIEW_THRESHOLD ? " needs-review" : ""
+                      }`}
+                      onClick={() => editingIndex !== i && setSelectedLine(i)}
+                    >
+                      <span className="pg-doc-line-idx">{i + 1}</span>
+                      {editingIndex === i ? (
+                        <input
+                          autoFocus
+                          className="pg-doc-line-input"
+                          defaultValue={textFor(i)}
+                          onClick={(e) => e.stopPropagation()}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") commitEdit(i, e.currentTarget.value);
+                            if (e.key === "Escape") setEditingIndex(null);
+                          }}
+                          onBlur={(e) => commitEdit(i, e.currentTarget.value)}
+                        />
+                      ) : (
+                        <span className="pg-doc-line-text">{textFor(i) || <em>(empty)</em>}</span>
+                      )}
+                      <span className={`cer-badge conf-${confTier(l.confidence)}`}>
+                        {(l.confidence * 100).toFixed(0)}%
+                      </span>
+                      <button
+                        className="pg-doc-line-edit"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setEditingIndex(i);
+                        }}
+                      >
+                        Edit
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {panelView === "fields" && (
+                <div className="pg-kv">
+                  <p className="pg-kv-note">Best-effort split on the first ":" in each line — not a trained form-field model.</p>
+                  {lines.map((l, i) => {
+                    const { key, value } = splitKV(textFor(i));
+                    return (
+                      <div key={i} className={`pg-kv-row${l.confidence < REVIEW_THRESHOLD ? " needs-review" : ""}`}>
+                        <span className="pg-kv-key">{key ?? <em>(no key detected)</em>}</span>
+                        <span className="pg-kv-value">{value}</span>
+                        <span className={`cer-badge conf-${confTier(l.confidence)}`}>
+                          {(l.confidence * 100).toFixed(0)}%
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {panelView === "regions" && (
+                <div className="pg-doc-regions">
+                  {lines.map((l, i) => (
+                    <div
+                      key={i}
+                      className={`pg-doc-region${i === selectedLine ? " selected" : ""}${
+                        l.confidence < REVIEW_THRESHOLD ? " needs-review" : ""
+                      }`}
+                      onClick={() => setSelectedLine(i)}
+                    >
+                      <span className="pg-doc-region-text">{textFor(i) || <em>(empty)</em>}</span>
+                      <span className={`cer-badge conf-${confTier(l.confidence)}`}>
+                        {(l.confidence * 100).toFixed(0)}%
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </>
           )}
         </div>

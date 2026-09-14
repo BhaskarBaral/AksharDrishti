@@ -41,7 +41,7 @@ export default function SampleViewer({ script, split, filename, records, selecte
         else ctx.lineTo(x, y);
       });
       ctx.closePath();
-      ctx.strokeStyle = i === selectedField ? "#5b9dff" : "rgba(224,97,111,0.8)";
+      ctx.strokeStyle = i === selectedField ? "#273A6B" : "rgba(168,69,44,0.75)";
       ctx.lineWidth = i === selectedField ? 2.5 : 1.5;
       ctx.stroke();
     });

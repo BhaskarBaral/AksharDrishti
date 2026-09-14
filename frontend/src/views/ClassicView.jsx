@@ -95,11 +95,11 @@ export default function ClassicView() {
   }
 
   if (loadError) {
-    return <p style={{ color: "#e0616f", padding: "1.5rem 2rem" }}>Failed to load dataset: {loadError}</p>;
+    return <p style={{ color: "#A8452C", padding: "1.5rem 2rem" }}>Failed to load dataset: {loadError}</p>;
   }
 
   return (
-    <main>
+    <main className="classic-root">
       <DatasetPanel
         scripts={scripts}
         script={script}

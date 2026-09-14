@@ -173,7 +173,7 @@ export default function PlaygroundView() {
   }
 
   if (loadError) {
-    return <p style={{ color: "#e0616f", padding: "1.5rem 2rem" }}>Failed to load dataset: {loadError}</p>;
+    return <p style={{ color: "#A8452C", padding: "1.5rem 2rem" }}>Failed to load dataset: {loadError}</p>;
   }
 
   const sortedResults = results.slice().sort((a, b) => {

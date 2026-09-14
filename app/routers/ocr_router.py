@@ -81,6 +81,59 @@ async def run_on_upload(script: str = Form(...), file: UploadFile = File(...),
     return {"results": results}
 
 
+@router.post("/benchmark")
+def benchmark(script: str = Form(...), engines: list[str] | None = Form(None),
+              limit: int = Form(15)):
+    """Aggregate CER per engine across up to `limit` real dataset samples --
+    the same head-to-head comparison rebenchmark_all.py runs offline,
+    exposed live so the UI can score a remote engine (bhashini-ocr) against
+    the local ones on identical inputs. Each sample is scored on its field
+    with the longest ground truth, same heuristic the Playground tab uses
+    when auto-picking a field."""
+    engines = _filter_engines(script, engines)
+    limit = max(1, min(limit, 40))
+    samples = reader.list_samples(script)[:limit]
+
+    per_engine = {e.name: [] for e in engines}
+    per_sample = []
+
+    for s in samples:
+        try:
+            records = reader.get_records(script, s["split"], s["filename"])
+            image_path = reader.resolve_image_path(script, s["split"], s["filename"])
+        except reader.SampleNotFoundError:
+            continue
+        if not records:
+            continue
+
+        best = max(records, key=lambda r: len(r.get("groundTruth") or ""))
+        ground_truth = best["groundTruth"]
+        im = Image.open(image_path)
+        crop = bbox_crop(im, best["boundingBox"]["vertices"])
+
+        row = {"split": s["split"], "filename": s["filename"], "groundTruth": ground_truth, "results": {}}
+        for engine in engines:
+            hyp = engine.recognize(crop, script)
+            cer = safe_cer(ground_truth, hyp)
+            if cer is not None:
+                per_engine[engine.name].append(cer)
+            row["results"][engine.name] = {"hypothesis": hyp, "cer": cer}
+        per_sample.append(row)
+
+    summary = [
+        {
+            "engine": e.name,
+            "meanCer": round(sum(per_engine[e.name]) / len(per_engine[e.name]), 4) if per_engine[e.name] else None,
+            "scored": len(per_engine[e.name]),
+            "total": len(per_sample),
+        }
+        for e in engines
+    ]
+    summary.sort(key=lambda r: (r["meanCer"] is None, r["meanCer"]))
+
+    return {"script": script, "sampleCount": len(per_sample), "summary": summary, "samples": per_sample}
+
+
 @router.post("/run-page-upload")
 async def run_page_upload(script: str = Form(...), file: UploadFile = File(...),
                            engines: list[str] | None = Form(None)):

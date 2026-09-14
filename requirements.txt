@@ -1,13 +1,22 @@
 fastapi
 uvicorn[standard]
 python-multipart
+python-dotenv
 pillow
 pytesseract
 jiwer
+requests
 easyocr
 paddleocr
 paddlepaddle==3.2.2
-transformers
+# transformers/huggingface_hub/tokenizers pinned together: paddleocr's
+# paddlenlp dependency pins tokenizers==0.19.1, and transformers>=4.43 needs
+# tokenizers>=0.19.5. transformers 4.42.4 + huggingface_hub<1.0 is the last
+# combination that satisfies both without patching paddlenlp -- newer
+# transformers (5.x) requires huggingface_hub>=1.0, which removes
+# is_offline_mode() and breaks the TrOCR engine's import at call time.
+transformers==4.42.4
+huggingface_hub<1.0,>=0.23
 sentencepiece
 numpy<2
 

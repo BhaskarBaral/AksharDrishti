@@ -4,6 +4,7 @@ routers and the dataset layer are untouched."""
 from functools import lru_cache
 
 from app.engines.base import OCREngine
+from app.engines.bhashini_ocr_engine import BhashiniOCREngine
 from app.engines.easyocr_engine import EasyOCREngine
 from app.engines.paddleocr_engine import PaddleOCREngine
 from app.engines.paddleocr_finetuned_engine import PaddleOCRFinetunedEngine
@@ -19,6 +20,7 @@ def get_engines() -> list[OCREngine]:
         PaddleOCREngine(),
         PaddleOCRFinetunedEngine(),
         TrOCREngine(),
+        BhashiniOCREngine(),
     ]
 
 
