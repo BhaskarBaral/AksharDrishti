@@ -1,0 +1,152 @@
+[
+ {
+  "file": "mlym_real_0090.jpeg",
+  "groundTruth": "ഈടാക്കണമെന്ന്",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0229.jpeg",
+  "groundTruth": "ബിഒടി",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0559.jpeg",
+  "groundTruth": "വായനയുമുണ്ടോ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0115.jpeg",
+  "groundTruth": "കാലയളവിലെ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0760.jpeg",
+  "groundTruth": "സൂക്ഷിക്കുകയും",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0693.jpeg",
+  "groundTruth": "കുന്ദമംഗലം",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0755.jpeg",
+  "groundTruth": "യൂറോപ്പും",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0759.jpeg",
+  "groundTruth": "സ്വാഭാവികനേതാക്കളായിരുന്നു",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0105.jpeg",
+  "groundTruth": "രൂപപ്പെടുത്തുകയാണ്",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0026.jpeg",
+  "groundTruth": "ഉണ്ടാകില്ല",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0143.jpeg",
+  "groundTruth": "സംഭവിച്ച്",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0655.jpeg",
+  "groundTruth": "വീഴ്ചയിലും",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0251.jpeg",
+  "groundTruth": "വിശദമാക്കുന്നതിലും",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0914.jpeg",
+  "groundTruth": "പിന്നാക്കാവസ്ഥ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "mlym_real_0282.jpeg",
+  "groundTruth": "പ്രക്ഷോഭ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ }
+]

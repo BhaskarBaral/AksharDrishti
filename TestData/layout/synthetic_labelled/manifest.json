@@ -1,0 +1,4403 @@
+[
+ {
+  "file": "deva_kv_clean_0006.png",
+  "script": "devanagari",
+  "doctype": "kv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     568,
+     90,
+     1031,
+     175
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     275,
+     463,
+     354
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     454,
+     640,
+     528
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     628,
+     519,
+     703
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     803,
+     806,
+     877
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     977,
+     645,
+     1049
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     446,
+     1984,
+     700,
+     2040
+    ]
+   }
+  ]
+ },
+ {
+  "file": "deva_table_clean_0014.png",
+  "script": "devanagari",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     568,
+     90,
+     1031,
+     175
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     299.0,
+     212,
+     351.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     294.0,
+     756,
+     356.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     294.0,
+     1167,
+     356.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     293.0,
+     1446,
+     357.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     390.0,
+     383,
+     460.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     390.0,
+     736,
+     460.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     392.5,
+     1208,
+     457.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     399.5,
+     1453,
+     450.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     490.0,
+     353,
+     560.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     492.0,
+     833,
+     558.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     492.5,
+     1208,
+     557.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     499.0,
+     1466,
+     551.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     590.0,
+     338,
+     660.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     592.0,
+     789,
+     658.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     592.5,
+     1210,
+     657.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     599.0,
+     1466,
+     651.0
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     275,
+     1480,
+     675
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     1118,
+     1179,
+     1470,
+     1267
+    ]
+   }
+  ]
+ },
+ {
+  "file": "deva_bikv_clean_0002.png",
+  "script": "devanagari",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     568,
+     90,
+     1031,
+     175
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     275,
+     247,
+     333
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     275,
+     735,
+     346
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     446,
+     386,
+     505
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     446,
+     724,
+     517
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     617,
+     353,
+     677
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     617,
+     731,
+     690
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     790,
+     279,
+     849
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     790,
+     1041,
+     869
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     969,
+     330,
+     1028
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     969,
+     807,
+     1031
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     170,
+     607,
+     412,
+     677
+    ]
+   }
+  ]
+ },
+ {
+  "file": "deva_mixed_clean_0006.png",
+  "script": "devanagari",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     568,
+     90,
+     1031,
+     175
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     275,
+     502,
+     354
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     454,
+     516,
+     540
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     640,
+     491,
+     717
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     817,
+     697,
+     900
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1000,
+     697,
+     1088
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     1193,
+     1623,
+     1363,
+     1793
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     386,
+     1242,
+     623,
+     1303
+    ]
+   }
+  ]
+ },
+ {
+  "file": "beng_kv_clean_0004.png",
+  "script": "bengali",
+  "doctype": "kv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     533,
+     90,
+     1067,
+     176
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     276,
+     419,
+     348
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     448,
+     543,
+     520
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     620,
+     567,
+     691
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     791,
+     602,
+     866
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     966,
+     663,
+     1037
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     128,
+     1251,
+     380,
+     1503
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     275,
+     422,
+     491,
+     557
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     565,
+     102,
+     950,
+     178
+    ]
+   }
+  ]
+ },
+ {
+  "file": "beng_table_clean_0003.png",
+  "script": "bengali",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     533,
+     90,
+     1067,
+     176
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     298.5,
+     215,
+     353.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     295.0,
+     747,
+     357.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     294.5,
+     1193,
+     357.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     294.5,
+     1457,
+     357.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     394.5,
+     298,
+     457.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     398.0,
+     773,
+     454.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     397.5,
+     1224,
+     454.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     400.5,
+     1456,
+     451.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     497.5,
+     348,
+     554.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     494.0,
+     789,
+     558.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     497.5,
+     1225,
+     554.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     500.5,
+     1457,
+     551.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     595.5,
+     331,
+     656.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     598.5,
+     750,
+     653.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     597.5,
+     1225,
+     654.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     600.5,
+     1457,
+     651.5
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     276,
+     1480,
+     676
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     623,
+     533,
+     806,
+     716
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     430,
+     1071,
+     757,
+     1237
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     1124,
+     1549,
+     1483,
+     1641
+    ]
+   }
+  ]
+ },
+ {
+  "file": "beng_bikv_clean_0006.png",
+  "script": "bengali",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     533,
+     90,
+     1067,
+     176
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     276,
+     247,
+     334
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     276,
+     703,
+     347
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     447,
+     383,
+     506
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     447,
+     687,
+     526
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     626,
+     353,
+     686
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     626,
+     749,
+     690
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     790,
+     279,
+     849
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     790,
+     1055,
+     865
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     965,
+     330,
+     1024
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     965,
+     813,
+     1027
+    ]
+   }
+  ]
+ },
+ {
+  "file": "beng_mixed_clean_0004.png",
+  "script": "bengali",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     533,
+     90,
+     1067,
+     176
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     276,
+     403,
+     347
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     447,
+     500,
+     526
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     626,
+     605,
+     713
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     813,
+     602,
+     888
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     988,
+     665,
+     1059
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     227,
+     1690,
+     604,
+     1794
+    ]
+   }
+  ]
+ },
+ {
+  "file": "taml_kv_severe_0005.jpeg",
+  "script": "tamil",
+  "doctype": "kv",
+  "quality": "severe",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     270.8,
+     62.1,
+     1205.19,
+     219.9
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     69.03,
+     298.53,
+     615.99,
+     412.4
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     80.58,
+     456.58,
+     945.88,
+     591.03
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     92.12,
+     657.14,
+     618.13,
+     769.66
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     103.67,
+     805.25,
+     1101.7,
+     948.28
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     115.22,
+     1005.23,
+     782.48,
+     1119.92
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     303.28,
+     561.25,
+     578.45,
+     836.42
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     188.16,
+     1674.75,
+     520.29,
+     1816.47
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     230.53,
+     1243.64,
+     584.26,
+     1365.88
+    ]
+   }
+  ]
+ },
+ {
+  "file": "taml_table_clean_0014.png",
+  "script": "tamil",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     335,
+     90,
+     1265,
+     188
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     305.0,
+     271,
+     371.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     303.0,
+     915,
+     373.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     305.5,
+     1227,
+     370.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     311.5,
+     1454,
+     364.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     403.0,
+     397,
+     473.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     405.5,
+     842,
+     470.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     405.0,
+     1220,
+     471.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     412.5,
+     1456,
+     463.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     503.5,
+     489,
+     572.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     503.0,
+     912,
+     573.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     505.0,
+     1220,
+     571.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     512.5,
+     1456,
+     563.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     603.0,
+     454,
+     673.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     608.0,
+     899,
+     668.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     605.0,
+     1220,
+     671.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     612.5,
+     1456,
+     663.5
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     288,
+     1480,
+     688
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     804,
+     441,
+     1007,
+     644
+    ]
+   }
+  ]
+ },
+ {
+  "file": "taml_bikv_clean_0003.png",
+  "script": "tamil",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     335,
+     90,
+     1265,
+     188
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     288,
+     247,
+     346
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     288,
+     879,
+     366
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     466,
+     384,
+     527
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     466,
+     804,
+     545
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     645,
+     353,
+     705
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     645,
+     745,
+     719
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     819,
+     279,
+     878
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     819,
+     1318,
+     898
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     998,
+     330,
+     1057
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     998,
+     811,
+     1060
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     200,
+     401,
+     389,
+     590
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     682,
+     55,
+     1017,
+     214
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     116,
+     812,
+     425,
+     898
+    ]
+   }
+  ]
+ },
+ {
+  "file": "taml_mixed_clean_0011.png",
+  "script": "tamil",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     335,
+     90,
+     1265,
+     188
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     288,
+     683,
+     378
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     478,
+     922,
+     557
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     657,
+     642,
+     736
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     836,
+     1177,
+     915
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1015,
+     735,
+     1091
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     644,
+     391,
+     895,
+     642
+    ]
+   }
+  ]
+ },
+ {
+  "file": "telu_kv_clean_0012.png",
+  "script": "telugu",
+  "doctype": "kv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     458,
+     90,
+     1142,
+     193
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     293,
+     475,
+     360
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     460,
+     523,
+     543
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     643,
+     560,
+     725
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     825,
+     975,
+     903
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1003,
+     676,
+     1080
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     390,
+     923,
+     638,
+     1171
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     237,
+     1340,
+     528,
+     1495
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     694,
+     1657,
+     996,
+     1720
+    ]
+   }
+  ]
+ },
+ {
+  "file": "telu_bikv_clean_0010.png",
+  "script": "telugu",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     458,
+     90,
+     1142,
+     193
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     293,
+     247,
+     351
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     293,
+     691,
+     375
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     475,
+     385,
+     535
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     475,
+     696,
+     554
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     654,
+     355,
+     714
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     654,
+     748,
+     732
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     832,
+     279,
+     891
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     832,
+     1169,
+     910
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     1010,
+     331,
+     1069
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     1010,
+     805,
+     1072
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     1067,
+     1659,
+     1244,
+     1836
+    ]
+   }
+  ]
+ },
+ {
+  "file": "telu_mixed_clean_0007.png",
+  "script": "telugu",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     458,
+     90,
+     1142,
+     193
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     293,
+     422,
+     365
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     465,
+     589,
+     552
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     652,
+     543,
+     736
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     836,
+     917,
+     929
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1029,
+     694,
+     1114
+    ]
+   }
+  ]
+ },
+ {
+  "file": "arab_kv_moderate_0001.jpeg",
+  "script": "urdu",
+  "doctype": "kv",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     620.12,
+     88.53,
+     963.15,
+     209.54
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1246.02,
+     302.05,
+     1473.97,
+     413.04
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1146.86,
+     511.04,
+     1475.8,
+     622.92
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     998.7,
+     720.03,
+     1477.52,
+     819.23
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     919.42,
+     915.03,
+     1479.53,
+     1048.94
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     836.44,
+     1144.02,
+     1481.4,
+     1261.68
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     1194.36,
+     1590.9,
+     1496.4,
+     1713.55
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     757.27,
+     1696.98,
+     1032.8,
+     1760.4
+    ]
+   }
+  ]
+ },
+ {
+  "file": "arab_table_clean_0003.png",
+  "script": "urdu",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     629,
+     90,
+     971,
+     208
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     480,
+     318.5,
+     548,
+     397.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     850,
+     315.5,
+     990,
+     400.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1054,
+     316.5,
+     1228,
+     399.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1311,
+     315.5,
+     1466,
+     400.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     368,
+     418.5,
+     548,
+     497.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     782,
+     419.5,
+     990,
+     496.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1022,
+     427.5,
+     1228,
+     488.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1242,
+     426.5,
+     1468,
+     489.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     412,
+     519.0,
+     548,
+     597.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     844,
+     515.0,
+     990,
+     601.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1022,
+     527.5,
+     1228,
+     588.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1242,
+     526.5,
+     1468,
+     589.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     411,
+     621.0,
+     548,
+     695.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     833,
+     622.5,
+     990,
+     693.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1028,
+     627.5,
+     1228,
+     688.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1242,
+     626.5,
+     1469,
+     689.5
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     308,
+     1480,
+     708
+    ]
+   }
+  ]
+ },
+ {
+  "file": "arab_bikv_clean_0001.png",
+  "script": "urdu",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     629,
+     90,
+     971,
+     208
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     308,
+     246,
+     366
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     308,
+     678,
+     400
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     500,
+     379,
+     559
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     500,
+     712,
+     585
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     685,
+     349,
+     745
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     685,
+     750,
+     754
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     854,
+     281,
+     913
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     854,
+     1014,
+     983
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     1083,
+     328,
+     1142
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     1083,
+     970,
+     1191
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     791,
+     28,
+     1022,
+     259
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     126,
+     1750,
+     494,
+     1921
+    ]
+   }
+  ]
+ },
+ {
+  "file": "arab_mixed_clean_0005.png",
+  "script": "urdu",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     629,
+     90,
+     971,
+     208
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1218,
+     308,
+     1480,
+     410
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1081,
+     510,
+     1480,
+     612
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1002,
+     712,
+     1480,
+     807
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     1009,
+     907,
+     1480,
+     1014
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     845,
+     1114,
+     1480,
+     1226
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     694,
+     1350,
+     1089,
+     1437
+    ]
+   }
+  ]
+ },
+ {
+  "file": "gujr_kv_moderate_0008.jpeg",
+  "script": "gujarati",
+  "doctype": "kv",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     563.03,
+     88.01,
+     1019.76,
+     176.06
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     112.68,
+     277.81,
+     368.29,
+     349.07
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     114.19,
+     445.34,
+     534.87,
+     528.07
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     115.78,
+     624.18,
+     553.37,
+     697.06
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     117.28,
+     790.82,
+     819.95,
+     876.05
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     118.87,
+     971.45,
+     636.46,
+     1045.05
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     589.53,
+     1158.68,
+     838.72,
+     1407.86
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     635.19,
+     106.98,
+     910.76,
+     175.42
+    ]
+   }
+  ]
+ },
+ {
+  "file": "gujr_table_clean_0004.png",
+  "script": "gujarati",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     572,
+     90,
+     1028,
+     174
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     298.0,
+     211,
+     350.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     289.0,
+     732,
+     359.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     293.0,
+     1188,
+     355.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     293.5,
+     1436,
+     354.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     393.0,
+     283,
+     455.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     393.0,
+     777,
+     455.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     395.5,
+     1219,
+     452.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     398.5,
+     1456,
+     449.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     493.0,
+     312,
+     555.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     489.0,
+     738,
+     559.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     495.5,
+     1219,
+     552.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     498.5,
+     1456,
+     549.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     593.0,
+     313,
+     655.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     593.0,
+     741,
+     655.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     595.5,
+     1219,
+     652.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     598.5,
+     1456,
+     649.5
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     274,
+     1480,
+     674
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     123,
+     574,
+     490,
+     673
+    ]
+   }
+  ]
+ },
+ {
+  "file": "gujr_bikv_clean_0006.png",
+  "script": "gujarati",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     572,
+     90,
+     1028,
+     174
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     274,
+     247,
+     332
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     274,
+     716,
+     343
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     443,
+     383,
+     502
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     443,
+     698,
+     512
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     612,
+     353,
+     672
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     612,
+     743,
+     674
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     774,
+     279,
+     833
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     774,
+     1078,
+     853
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     953,
+     330,
+     1012
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     953,
+     811,
+     1015
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     815,
+     1321,
+     1061,
+     1456
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     710,
+     106,
+     975,
+     168
+    ]
+   }
+  ]
+ },
+ {
+  "file": "gujr_mixed_clean_0003.png",
+  "script": "gujarati",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     572,
+     90,
+     1028,
+     174
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     274,
+     366,
+     347
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     447,
+     546,
+     526
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     626,
+     545,
+     702
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     802,
+     810,
+     893
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     993,
+     644,
+     1070
+    ]
+   }
+  ]
+ },
+ {
+  "file": "knda_kv_clean_0001.png",
+  "script": "kannada",
+  "doctype": "kv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     498,
+     90,
+     1102,
+     185
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     285,
+     457,
+     365
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     465,
+     627,
+     545
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     645,
+     600,
+     726
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     826,
+     845,
+     908
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1008,
+     696,
+     1090
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     1004,
+     1299,
+     1303,
+     1465
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     194,
+     1856,
+     565,
+     1971
+    ]
+   }
+  ]
+ },
+ {
+  "file": "knda_table_clean_0003.png",
+  "script": "kannada",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     498,
+     90,
+     1102,
+     185
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     305.5,
+     246,
+     364.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     305.5,
+     802,
+     364.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     299.0,
+     1212,
+     371.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     301.5,
+     1457,
+     368.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     405.5,
+     335,
+     464.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     403.5,
+     838,
+     466.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     400.0,
+     1228,
+     470.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     409.5,
+     1457,
+     460.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     498.5,
+     298,
+     571.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     501.0,
+     832,
+     569.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     500.0,
+     1228,
+     570.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     509.5,
+     1457,
+     560.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     605.5,
+     392,
+     664.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     599.0,
+     782,
+     671.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     600.0,
+     1228,
+     670.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     609.5,
+     1456,
+     660.5
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     285,
+     1480,
+     685
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     156,
+     480,
+     415,
+     594
+    ]
+   }
+  ]
+ },
+ {
+  "file": "knda_bikv_clean_0004.png",
+  "script": "kannada",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     498,
+     90,
+     1102,
+     185
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     285,
+     247,
+     343
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     285,
+     697,
+     368
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     468,
+     384,
+     528
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     468,
+     813,
+     544
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     644,
+     355,
+     704
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     644,
+     755,
+     723
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     823,
+     279,
+     882
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     823,
+     1097,
+     905
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     1005,
+     331,
+     1064
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     1005,
+     811,
+     1067
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     615,
+     449,
+     887,
+     577
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     178,
+     2032,
+     450,
+     2102
+    ]
+   }
+  ]
+ },
+ {
+  "file": "knda_mixed_clean_0015.png",
+  "script": "kannada",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     498,
+     90,
+     1102,
+     185
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     285,
+     440,
+     372
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     472,
+     675,
+     555
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     655,
+     600,
+     736
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     836,
+     979,
+     918
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1018,
+     696,
+     1100
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     250,
+     227,
+     448,
+     425
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     182,
+     1248,
+     509,
+     1322
+    ]
+   }
+  ]
+ },
+ {
+  "file": "mlym_kv_moderate_0011.jpeg",
+  "script": "malayalam",
+  "doctype": "kv",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     424.99,
+     89.26,
+     1170.17,
+     181.75
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     118.37,
+     281.55,
+     524.5,
+     348.36
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     118.7,
+     446.9,
+     850.86,
+     528.36
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     119.06,
+     627.3,
+     650.21,
+     704.36
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     119.41,
+     802.31,
+     1144.56,
+     880.36
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     119.76,
+     978.95,
+     824.91,
+     1057.36
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     663.93,
+     63.74,
+     930.18,
+     188.27
+    ]
+   }
+  ]
+ },
+ {
+  "file": "mlym_table_severe_0012.jpeg",
+  "script": "malayalam",
+  "doctype": "table",
+  "quality": "severe",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     367.95,
+     69.78,
+     1117.03,
+     204.65
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     87.94,
+     335.5,
+     197.3,
+     401.66
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     528.87,
+     293.21,
+     827.49,
+     380.52
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     970.54,
+     280.07,
+     1175.44,
+     346.91
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1208.18,
+     267.06,
+     1411.96,
+     331.85
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     93.7,
+     426.62,
+     308.17,
+     503.98
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     534.9,
+     396.39,
+     810.32,
+     478.35
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     976.13,
+     374.4,
+     1181.67,
+     452.23
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1214.12,
+     366.85,
+     1426.83,
+     431.17
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     99.76,
+     527.11,
+     344.88,
+     601.31
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     541.02,
+     497.29,
+     856.96,
+     574.68
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     982.04,
+     474.23,
+     1187.58,
+     552.05
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1220.06,
+     467.77,
+     1422.73,
+     530.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     105.67,
+     623.86,
+     402.7,
+     701.13
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     546.78,
+     592.66,
+     895.96,
+     677.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     987.95,
+     574.05,
+     1193.5,
+     651.88
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1225.97,
+     567.59,
+     1428.64,
+     630.32
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     72.78,
+     242.24,
+     1454.05,
+     721.92
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     173.7,
+     1910.92,
+     433.81,
+     2171.03
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     232.9,
+     1340.14,
+     439.17,
+     1463.76
+    ]
+   }
+  ]
+ },
+ {
+  "file": "mlym_bikv_clean_0001.png",
+  "script": "malayalam",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     427,
+     90,
+     1172,
+     181
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     281,
+     247,
+     339
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     281,
+     794,
+     347
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     447,
+     385,
+     508
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     447,
+     883,
+     512
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     612,
+     357,
+     672
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     612,
+     745,
+     686
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     786,
+     279,
+     845
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     786,
+     1333,
+     862
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     962,
+     332,
+     1021
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     962,
+     805,
+     1024
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     738,
+     1376,
+     976,
+     1452
+    ]
+   }
+  ]
+ },
+ {
+  "file": "mlym_mixed_clean_0002.png",
+  "script": "malayalam",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     427,
+     90,
+     1172,
+     181
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     281,
+     602,
+     356
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     456,
+     893,
+     536
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     636,
+     651,
+     712
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     812,
+     1145,
+     888
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     988,
+     831,
+     1065
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     1006,
+     1183,
+     1223,
+     1400
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     936,
+     1555,
+     1235,
+     1636
+    ]
+   }
+  ]
+ },
+ {
+  "file": "orya_kv_clean_0012.png",
+  "script": "odia",
+  "doctype": "kv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     522,
+     90,
+     1078,
+     187
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     287,
+     422,
+     356
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     456,
+     541,
+     524
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     624,
+     550,
+     700
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     800,
+     671,
+     881
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     981,
+     677,
+     1051
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     54,
+     1816,
+     331,
+     1919
+    ]
+   }
+  ]
+ },
+ {
+  "file": "orya_table_moderate_0005.jpeg",
+  "script": "odia",
+  "doctype": "table",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     529.94,
+     87.62,
+     1086.76,
+     189.45
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     140.41,
+     303.75,
+     223.89,
+     359.46
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     582.37,
+     304.58,
+     751.89,
+     367.05
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1024.32,
+     304.92,
+     1186.91,
+     374.33
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1262.35,
+     310.99,
+     1463.86,
+     372.73
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     139.5,
+     398.24,
+     318.06,
+     465.79
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     581.49,
+     403.58,
+     774.03,
+     468.25
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1023.47,
+     406.42,
+     1226.02,
+     473.17
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1261.51,
+     414.99,
+     1470.96,
+     468.8
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     138.65,
+     501.24,
+     295.17,
+     562.59
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     580.64,
+     505.08,
+     785.15,
+     566.85
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1022.6,
+     506.42,
+     1225.16,
+     573.17
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1260.65,
+     515.48,
+     1460.09,
+     568.21
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     137.79,
+     601.23,
+     372.3,
+     663.26
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     579.77,
+     605.07,
+     805.28,
+     667.03
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1021.73,
+     606.41,
+     1224.29,
+     673.16
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1259.78,
+     614.98,
+     1469.22,
+     668.79
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     123.61,
+     281.13,
+     1487.03,
+     692.92
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     616.78,
+     336.4,
+     830.62,
+     550.23
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     1122.66,
+     767.8,
+     1406.89,
+     913.25
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     819.36,
+     1894.2,
+     1135.09,
+     1982.94
+    ]
+   }
+  ]
+ },
+ {
+  "file": "orya_bikv_clean_0004.png",
+  "script": "odia",
+  "doctype": "bikv",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     522,
+     90,
+     1078,
+     187
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     287,
+     247,
+     345
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     287,
+     713,
+     361
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     461,
+     385,
+     520
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     461,
+     731,
+     531
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     631,
+     353,
+     691
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     631,
+     744,
+     704
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     804,
+     279,
+     863
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     804,
+     964,
+     878
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     120,
+     978,
+     330,
+     1037
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     500,
+     978,
+     810,
+     1040
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     1057,
+     1833,
+     1393,
+     1938
+    ]
+   }
+  ]
+ },
+ {
+  "file": "orya_mixed_moderate_0003.jpeg",
+  "script": "odia",
+  "doctype": "mixed",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     506.11,
+     85.74,
+     1063.57,
+     191.5
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     107.27,
+     293.07,
+     409.4,
+     371.81
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     110.01,
+     465.08,
+     537.06,
+     541.79
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     112.69,
+     635.0,
+     543.84,
+     717.77
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     115.47,
+     808.83,
+     682.67,
+     898.74
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     118.32,
+     990.19,
+     661.42,
+     1072.72
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     917.21,
+     1489.94,
+     1127.45,
+     1700.18
+    ]
+   }
+  ]
+ },
+ {
+  "file": "guru_kv_moderate_0005.jpeg",
+  "script": "punjabi",
+  "doctype": "kv",
+  "quality": "moderate",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     569.63,
+     87.79,
+     1010.63,
+     191.31
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     111.7,
+     293.0,
+     407.39,
+     365.03
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     113.44,
+     460.86,
+     519.2,
+     541.02
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     115.25,
+     636.52,
+     552.99,
+     716.01
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     117.05,
+     810.57,
+     646.77,
+     889.0
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     118.82,
+     983.96,
+     609.5,
+     1056.99
+    ]
+   },
+   {
+    "class": "seal",
+    "bbox": [
+     218.98,
+     1195.71,
+     442.24,
+     1418.96
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     462.94,
+     1969.4,
+     668.97,
+     2072.5
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     619.7,
+     95.74,
+     918.54,
+     181.8
+    ]
+   }
+  ]
+ },
+ {
+  "file": "guru_table_clean_0013.png",
+  "script": "punjabi",
+  "doctype": "table",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     580,
+     90,
+     1020,
+     189
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     134,
+     313.0,
+     215,
+     365.0
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     576,
+     308.5,
+     753,
+     369.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1018,
+     308.5,
+     1190,
+     369.5
+    ]
+   },
+   {
+    "class": "table-header",
+    "bbox": [
+     1256,
+     309.0,
+     1423,
+     369.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     404.0,
+     297,
+     474.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     408.5,
+     776,
+     469.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     406.5,
+     1217,
+     471.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     413.0,
+     1463,
+     465.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     504.0,
+     315,
+     574.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     508.5,
+     775,
+     569.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     506.5,
+     1218,
+     571.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     513.0,
+     1466,
+     565.0
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     134,
+     608.5,
+     312,
+     669.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     576,
+     605.5,
+     746,
+     672.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1018,
+     606.5,
+     1217,
+     671.5
+    ]
+   },
+   {
+    "class": "table-cell",
+    "bbox": [
+     1256,
+     613.0,
+     1466,
+     665.0
+    ]
+   },
+   {
+    "class": "table",
+    "bbox": [
+     120,
+     289,
+     1480,
+     689
+    ]
+   },
+   {
+    "class": "signature",
+    "bbox": [
+     501,
+     1834,
+     797,
+     1930
+    ]
+   }
+  ]
+ },
+ {
+  "file": "guru_bikv_severe_0002.jpeg",
+  "script": "punjabi",
+  "doctype": "bikv",
+  "quality": "severe",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     633.28,
+     78.93,
+     1078.29,
+     203.32
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     164.88,
+     250.87,
+     295.04,
+     316.15
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     543.02,
+     272.94,
+     743.28,
+     363.2
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     154.43,
+     429.57,
+     423.41,
+     503.92
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     533.26,
+     451.64,
+     778.81,
+     533.58
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     144.61,
+     597.29,
+     380.7,
+     670.72
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     523.22,
+     619.36,
+     768.05,
+     706.23
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     134.62,
+     770.0,
+     296.78,
+     838.13
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     513.17,
+     792.07,
+     968.65,
+     891.2
+    ]
+   },
+   {
+    "class": "field-label",
+    "bbox": [
+     124.57,
+     942.7,
+     337.65,
+     1013.8
+    ]
+   },
+   {
+    "class": "field-value",
+    "bbox": [
+     503.76,
+     964.77,
+     812.84,
+     1044.44
+    ]
+   }
+  ]
+ },
+ {
+  "file": "guru_mixed_clean_0010.png",
+  "script": "punjabi",
+  "doctype": "mixed",
+  "quality": "clean",
+  "source": "synthetic",
+  "regions": [
+   {
+    "class": "header",
+    "bbox": [
+     580,
+     90,
+     1020,
+     189
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     289,
+     398,
+     368
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     468,
+     594,
+     552
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     652,
+     529,
+     731
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     831,
+     690,
+     918
+    ]
+   },
+   {
+    "class": "form-field",
+    "bbox": [
+     120,
+     1018,
+     610,
+     1086
+    ]
+   },
+   {
+    "class": "stamp",
+    "bbox": [
+     599,
+     1398,
+     859,
+     1530
+    ]
+   }
+  ]
+ }
+]

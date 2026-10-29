@@ -46,10 +46,44 @@ export function runBenchmark(script, engines, limit) {
   return jsonFetch("/api/ocr/benchmark", { method: "POST", body: form });
 }
 
-export function runPageUpload(script, file, engines) {
+export function runPageUpload(script, file, engines, groundTruth) {
   const form = new FormData();
   form.set("script", script);
   form.set("file", file);
   (engines || []).forEach((name) => form.append("engines", name));
+  if (groundTruth) form.set("ground_truth", groundTruth);
   return jsonFetch("/api/ocr/run-page-upload", { method: "POST", body: form });
+}
+
+export const getPageSamples = (script) => jsonFetch(`/api/ocr/page-samples/${script}`);
+
+export const pageSampleImageUrl = (script, id) =>
+  `/api/ocr/page-samples/${script}/image?id=${encodeURIComponent(id)}`;
+
+export const getLayoutSamples = () => jsonFetch("/api/layout/samples");
+
+export const layoutSampleImageUrl = (id) => `/api/layout/samples/image?id=${encodeURIComponent(id)}`;
+
+export function detectLayoutSample(id, threshold) {
+  const form = new FormData();
+  form.set("id", id);
+  form.set("threshold", threshold);
+  return jsonFetch("/api/layout/detect-sample", { method: "POST", body: form });
+}
+
+export function detectLayoutUpload(file, threshold) {
+  const form = new FormData();
+  form.set("file", file);
+  form.set("threshold", threshold);
+  return jsonFetch("/api/layout/detect-upload", { method: "POST", body: form });
+}
+
+export function createGroundTruth(script, file, lines, engine, imageTextType) {
+  const form = new FormData();
+  form.set("script", script);
+  form.set("file", file);
+  form.set("lines", JSON.stringify(lines));
+  form.set("engine", engine);
+  form.set("image_text_type", imageTextType);
+  return jsonFetch("/api/ocr/create-ground-truth", { method: "POST", body: form });
 }

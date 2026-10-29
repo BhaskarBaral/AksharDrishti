@@ -1,0 +1,152 @@
+[
+ {
+  "file": "gujr_real_0275.jpeg",
+  "groundTruth": "બંધનું",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0260.jpeg",
+  "groundTruth": "બળવાખોર",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0110.jpeg",
+  "groundTruth": "એકડો",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0203.jpeg",
+  "groundTruth": "ઇંટ્રોવર્ટ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0049.jpeg",
+  "groundTruth": "ઓએસડીને",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0020.jpeg",
+  "groundTruth": "જયંતીલાલ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0299.jpeg",
+  "groundTruth": "ડાઉનસાઇ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0038.jpeg",
+  "groundTruth": "બારી",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0223.jpeg",
+  "groundTruth": "હળવું",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0188.jpeg",
+  "groundTruth": "નટરાજનનું",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0078.jpeg",
+  "groundTruth": "પ્રોડક્ટ્સની",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0025.jpeg",
+  "groundTruth": "ફાઈનાનસીંગમાં",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0030.jpeg",
+  "groundTruth": "મેળવવું",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0166.jpeg",
+  "groundTruth": "શેટ્ટર",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "gujr_real_0045.jpeg",
+  "groundTruth": "એડ્વોકેટની",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ }
+]

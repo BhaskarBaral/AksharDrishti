@@ -1,0 +1,152 @@
+[
+ {
+  "file": "telu_real_0433.jpeg",
+  "groundTruth": "పెద్దగాని",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0460.jpeg",
+  "groundTruth": "ఆంథోనీ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0891.jpeg",
+  "groundTruth": "అదెప్పటికీ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0559.jpeg",
+  "groundTruth": "తరలింపు",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0007.jpeg",
+  "groundTruth": "బాలకోయిలలు",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0826.jpeg",
+  "groundTruth": "ఏళ్లూ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0349.jpeg",
+  "groundTruth": "పంజాల",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0430.jpeg",
+  "groundTruth": "అజ్ఞానిగానే",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0604.jpeg",
+  "groundTruth": "శ్రీశ్రీశ్రీ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0164.jpeg",
+  "groundTruth": "ధాటికి",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0829.jpeg",
+  "groundTruth": "తెలియకపోయినా",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0715.jpeg",
+  "groundTruth": "కుట్టేసుకుని",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0226.jpeg",
+  "groundTruth": "ఫ్యామిలీ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0285.jpeg",
+  "groundTruth": "విషయాల్లోను",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "telu_real_0778.jpeg",
+  "groundTruth": "భ్రమింప",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Telugu (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ }
+]

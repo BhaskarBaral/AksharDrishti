@@ -1,0 +1,152 @@
+[
+ {
+  "file": "taml_real_0184.jpeg",
+  "groundTruth": "மெதுவாக",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0041.jpeg",
+  "groundTruth": "எதிர்பார்க்கவில்லை",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0194.jpeg",
+  "groundTruth": "ஆய்வாளர்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0195.jpeg",
+  "groundTruth": "நாடப்பட்டது",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0023.jpeg",
+  "groundTruth": "நிலைப்படுத்துவதற்கும்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0173.jpeg",
+  "groundTruth": "திருமணங்கள்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0053.jpeg",
+  "groundTruth": "ஆசையை",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0136.jpeg",
+  "groundTruth": "விழுந்தான்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0177.jpeg",
+  "groundTruth": "ஏற்படுத்தியிருப்பதாக",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0048.jpeg",
+  "groundTruth": "எல்லாவெல",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0236.jpeg",
+  "groundTruth": "ஜாடு",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0275.jpeg",
+  "groundTruth": "நடத்தப்படவிருக்கும்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0050.jpeg",
+  "groundTruth": "கிரியின்",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0064.jpeg",
+  "groundTruth": "திருட்டுத்தனமா",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "taml_real_0283.jpeg",
+  "groundTruth": "மனது",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ }
+]

@@ -15,7 +15,7 @@ export default function PlaygroundView() {
   const [scripts, setScripts] = useState([]);
   const [script, setScript] = useState(null);
   const [loadError, setLoadError] = useState("");
-  const [stageMode, setStageMode] = useState("field"); // "field" | "document"
+  const [stageMode, setStageMode] = useState("field"); // "field" (Word level) | "document" (Page level)
 
   const [engines, setEngines] = useState([]);
   const [selectedEngines, setSelectedEngines] = useState(new Set());
@@ -36,14 +36,19 @@ export default function PlaygroundView() {
   const [status, setStatus] = useState("idle"); // idle | running | done | error | no-engines
   const [results, setResults] = useState([]);
   const [error, setError] = useState("");
+  const [uploadWasPage, setUploadWasPage] = useState(false); // server read the upload as a multi-line page
 
   const fileInputRef = useRef(null);
 
   useEffect(() => {
-    getScripts()
-      .then(({ scripts: list }) => {
-        setScripts(list);
-        if (list.length) setScript(list[0]);
+    // Only offer scripts that have at least one OCR engine (the dataset also
+    // carries Ol Chiki, which no engine here can read yet).
+    Promise.all([getScripts(), fetch("/v1/scripts").then((r) => (r.ok ? r.json() : { scripts: [] }))])
+      .then(([{ scripts: list }, { scripts: withEngines }]) => {
+        const readable = new Set(withEngines.filter((s) => s.engines?.length).map((s) => s.script));
+        const shown = readable.size ? list.filter((s) => readable.has(s)) : list;
+        setScripts(shown);
+        if (shown.length) setScript(shown[0]);
       })
       .catch((err) => setLoadError(err.message));
   }, []);
@@ -85,6 +90,7 @@ export default function PlaygroundView() {
     try {
       const data = await runOnUpload(script, file, [...engineSet]);
       setResults(data.results);
+      setUploadWasPage(Boolean(data.treatedAsFullPage));
       setStatus("done");
     } catch (err) {
       setError(err.message);
@@ -214,11 +220,19 @@ export default function PlaygroundView() {
           ))}
         </div>
         <div className="pg-stage-toggle">
-          <button className={stageMode === "field" ? "active" : ""} onClick={() => setStageMode("field")}>
-            Field
+          <button
+            className={stageMode === "field" ? "active" : ""}
+            onClick={() => setStageMode("field")}
+            title="Recognise one word or field crop and compare engines"
+          >
+            Word level
           </button>
-          <button className={stageMode === "document" ? "active" : ""} onClick={() => setStageMode("document")}>
-            Document
+          <button
+            className={stageMode === "document" ? "active" : ""}
+            onClick={() => setStageMode("document")}
+            title="Detect and read every line on a full page, then review and save as ULCA ground truth"
+          >
+            Page level
           </button>
         </div>
       </section>
@@ -287,15 +301,17 @@ export default function PlaygroundView() {
           {mode === "sample" && groundTruth != null && (
             <div className="pg-groundtruth">
               <span>Ground truth ({fieldIndex + 1}/{sampleRecords.length})</span>
-              <strong>{groundTruth}</strong>
+              <strong dir="auto">{groundTruth}</strong>
               {sampleRecords.length > 1 && <button onClick={cycleField}>Try another field &rarr;</button>}
             </div>
           )}
 
           <div className="pg-sample-strip">
-            <span className="pg-label">or try a dataset sample</span>
+            <span className="pg-label">
+              or try a held-out test word — TestData/{script}/word_level ({samples.length} real handwritten)
+            </span>
             <div className="pg-sample-thumbs">
-              {samples.slice(0, 24).map((s) => {
+              {samples.map((s) => {
                 const isActive = sampleMeta && sampleMeta.split === s.split && sampleMeta.filename === s.filename;
                 return (
                   <button
@@ -322,6 +338,12 @@ export default function PlaygroundView() {
         )}
         {status === "no-engines" && <div className="pg-empty">Pick at least one engine above.</div>}
         {status === "error" && <div className="pg-empty">Error: {error}</div>}
+        {status === "done" && mode === "upload" && uploadWasPage && (
+          <p className="pg-upload-note">
+            This upload looks like a multi-line page, so each engine ran its own text detection over it. For
+            per-line boxes, review and ULCA export, switch to Page level.
+          </p>
+        )}
         {status === "done" && (
           <div className="pg-card-grid">
             {sortedResults.map((r, i) => {
@@ -334,8 +356,14 @@ export default function PlaygroundView() {
                     <span className="pg-card-engine">{r.engine}</span>
                     {r.engine.endsWith("-finetuned") && <span className="badge-finetuned">fine-tuned</span>}
                   </div>
-                  <p className="pg-card-hyp">{r.hypothesis || <em>(empty)</em>}</p>
-                  <span className={`cer-badge ${cerClass}`}>{hasCer ? `${r.cer.toFixed(3)} CER` : "no reference"}</span>
+                  {r.error ? (
+                    <p className="pg-card-error">Engine error: {r.error}</p>
+                  ) : (
+                    <p className="pg-card-hyp" dir="auto">{r.hypothesis || <em>(empty)</em>}</p>
+                  )}
+                  <span className={`cer-badge ${r.error ? "cer-bad" : cerClass}`}>
+                    {r.error ? "failed" : hasCer ? `${r.cer.toFixed(3)} CER` : "no reference"}
+                  </span>
                 </div>
               );
             })}

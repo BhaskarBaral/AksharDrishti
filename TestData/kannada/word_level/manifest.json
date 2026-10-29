@@ -1,0 +1,152 @@
+[
+ {
+  "file": "knda_real_0124.jpeg",
+  "groundTruth": "ಜೋಡಿಗಳು",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0215.jpeg",
+  "groundTruth": "ಗೊತ್ತಿರಬಹುದು",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0204.jpeg",
+  "groundTruth": "ಹೊಳೆಯಲ್ಲಿ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0296.jpeg",
+  "groundTruth": "ತೀರ್ಮಾನಿಸಿದೆ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0299.jpeg",
+  "groundTruth": "ಕುರಿತಂತೆಯೂ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0047.jpeg",
+  "groundTruth": "ನಕಾರಾತ್ಮಕ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0064.jpeg",
+  "groundTruth": "ಮಾಡಿದ್ದರೆ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0115.jpeg",
+  "groundTruth": "ವಿಚಾರಗಳನ್ನು",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0218.jpeg",
+  "groundTruth": "ಜಾಲತಾಣಕ್ಕಾಗಲೀ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0290.jpeg",
+  "groundTruth": "ಹೆಚ್ಚಲಿದೆ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0032.jpeg",
+  "groundTruth": "ಮಾಡುವುದರ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0031.jpeg",
+  "groundTruth": "ನಾಬಾ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0300.jpeg",
+  "groundTruth": "ಬಸವಲಿಂಗಪ್ಪನವರ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0036.jpeg",
+  "groundTruth": "ಆಸ್ಪತ್ರೆಯಲ್ಲಿ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "knda_real_0283.jpeg",
+  "groundTruth": "ತಟ್ಟಿಯಲ್ಲಿಲ್ಲ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ }
+]

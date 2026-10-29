@@ -102,7 +102,7 @@ class BhashiniOCREngine(OCREngine):
         self._pipeline_cache[lang] = pipeline
         return pipeline
 
-    def recognize(self, crop: Image.Image, script: str) -> str:
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
         lang = SCRIPT_TO_LANG[script]
         try:
             endpoint, auth_header, service_id = self._get_pipeline(lang)

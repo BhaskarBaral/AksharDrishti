@@ -17,8 +17,14 @@ class OCREngine(ABC):
         """Whether this engine has a language mapping for the given script folder name."""
 
     @abstractmethod
-    def recognize(self, crop: Image.Image, script: str) -> str:
-        """Run OCR on an already-cropped field image, return recognized text."""
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
+        """Run OCR on an already-cropped field image, return recognized text.
+        `is_full_page=True` means the caller couldn't crop first (e.g. a raw
+        citizen upload) and this is a whole page, not a tight single-field
+        crop -- engines whose recognition-only path assumes a single line
+        (Tesseract) need to know this to pick a sane page-segmentation mode.
+        Engines that always do their own detection regardless of input size
+        (EasyOCR, PaddleOCR) can ignore the flag."""
 
     def recognize_page(self, image: Image.Image, script: str) -> list[dict]:
         """Detect and recognize every text line in a full (uncropped) image,

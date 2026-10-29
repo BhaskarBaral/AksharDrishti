@@ -1,0 +1,152 @@
+[
+ {
+  "file": "arab_real_0024.jpeg",
+  "groundTruth": "انڈیز",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0233.jpeg",
+  "groundTruth": "ہیروئین",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0099.jpeg",
+  "groundTruth": "راہیں",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0296.jpeg",
+  "groundTruth": "جیش",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0186.jpeg",
+  "groundTruth": "شاہراہ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0120.jpeg",
+  "groundTruth": "پہلوی",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0052.jpeg",
+  "groundTruth": "جانب",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0149.jpeg",
+  "groundTruth": "تحلیل",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0187.jpeg",
+  "groundTruth": "ثانیہ",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0151.jpeg",
+  "groundTruth": "والسلام",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0143.jpeg",
+  "groundTruth": "بوتلیں",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0117.jpeg",
+  "groundTruth": "ادم",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0036.jpeg",
+  "groundTruth": "میزبانی",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0041.jpeg",
+  "groundTruth": "ناظرین",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "arab_real_0195.jpeg",
+  "groundTruth": "اختصارات",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-INDIC-HW-Words (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-indic-hw-words"
+  ],
+  "license": "unknown-license"
+ }
+]

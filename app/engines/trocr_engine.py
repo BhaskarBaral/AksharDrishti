@@ -51,7 +51,7 @@ class TrOCREngine(OCREngine):
             self._models[script] = (processor, model, device)
         return self._models[script]
 
-    def recognize(self, crop: Image.Image, script: str) -> str:
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
         try:
             import torch
 

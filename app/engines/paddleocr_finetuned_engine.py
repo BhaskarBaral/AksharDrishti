@@ -5,6 +5,7 @@ from PIL import Image
 
 from app.config import DEMO_ROOT
 from app.engines.base import OCREngine
+from app.layout import sort_reading_order
 
 # PaddleX's modern TextRecognition inference path never reverses RTL output
 # on its own (see ppocr/postprocess/rec_postprocess.py's legacy "arabic" in
@@ -64,9 +65,15 @@ class PaddleOCRFinetunedEngine(OCREngine):
     a GPU build can't safely share this process with torch)."""
 
     name = "paddleocr-finetuned"
+    # Our checkpoints are recognition-only (trained on word crops), so page
+    # mode borrows the official PP-OCRv5 detector to find text regions first
+    # and runs each region through the fine-tuned recognizer.
+    supports_page_level = True
+    DET_MODEL_NAME = "PP-OCRv5_server_det"
 
     def __init__(self):
         self._predictors: dict[str, object] = {}
+        self._detector = None
 
     def is_available_for(self, script: str) -> bool:
         return script in SCRIPT_TO_MODEL_NAME and self._model_dir(script).exists()
@@ -85,12 +92,45 @@ class PaddleOCRFinetunedEngine(OCREngine):
             )
         return self._predictors[script]
 
-    def recognize(self, crop: Image.Image, script: str) -> str:
+    def _get_detector(self):
+        if self._detector is None:
+            from paddleocr import TextDetection
+
+            self._detector = TextDetection(model_name=self.DET_MODEL_NAME, device="cpu")
+        return self._detector
+
+    def _recognize_bgr(self, bgr: np.ndarray, script: str) -> tuple[str, float]:
+        result = next(iter(self._get_predictor(script).predict(bgr)))
+        text = result["rec_text"]
+        text = _pred_reverse(text) if script in _RTL_SCRIPTS else text
+        return text, float(result["rec_score"])
+
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
         try:
-            predictor = self._get_predictor(script)
+            if is_full_page:
+                return " ".join(it["text"] for it in self.recognize_page(crop, script)).strip()
             bgr = np.array(crop.convert("RGB"))[:, :, ::-1]
-            result = next(iter(predictor.predict(bgr)))
-            text = result["rec_text"]
-            return _pred_reverse(text) if script in _RTL_SCRIPTS else text
+            return self._recognize_bgr(bgr, script)[0]
         except Exception as e:
             return f"__ERROR__:{e}"
+
+    def recognize_page(self, image: Image.Image, script: str) -> list[dict]:
+        bgr = np.ascontiguousarray(np.array(image.convert("RGB"))[:, :, ::-1])
+        h, w = bgr.shape[:2]
+        det = next(iter(self._get_detector().predict(bgr)))
+
+        items = []
+        for poly in det["dt_polys"]:
+            xs, ys = [p[0] for p in poly], [p[1] for p in poly]
+            x0, x1 = max(int(min(xs)), 0), min(int(max(xs)) + 1, w)
+            y0, y1 = max(int(min(ys)), 0), min(int(max(ys)) + 1, h)
+            if x1 - x0 < 4 or y1 - y0 < 4:
+                continue
+            text, score = self._recognize_bgr(np.ascontiguousarray(bgr[y0:y1, x0:x1]), script)
+            if text:
+                items.append({
+                    "bbox": [[float(x), float(y)] for x, y in poly],
+                    "text": text,
+                    "confidence": score,
+                })
+        return sort_reading_order(items, rtl=script in _RTL_SCRIPTS)

@@ -1,0 +1,87 @@
+{
+ "devanagari": {
+  "word_level": 50,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "bengali": {
+  "word_level": 50,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "real"
+  ]
+ },
+ "tamil": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "telugu": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "real"
+  ]
+ },
+ "urdu": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "gujarati": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "kannada": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "malayalam": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "odia": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "punjabi": {
+  "word_level": 15,
+  "word_level_human_reviewed": 15,
+  "page_level": 10,
+  "page_level_source": [
+   "synthetic"
+  ]
+ },
+ "layout": {
+  "real_labelled": 20,
+  "real_unlabelled": 8,
+  "synthetic_labelled": 39
+ }
+}

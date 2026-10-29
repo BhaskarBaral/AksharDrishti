@@ -8,7 +8,11 @@ from app.layout import RTL_SCRIPTS, sort_reading_order
 SCRIPT_TO_LANG = {
     "devanagari": "hi",
     "bengali": "bn",
-    "tamil": "ta",
+    # tamil: dropped -- easyocr 1.7.2's tamil.pth checkpoint has 143 output
+    # classes but its bundled Tamil character list builds a 127-class head, so
+    # Reader(["ta"]) always fails with a state_dict size mismatch (every
+    # request came back as "__ERROR__:..."). Re-add once easyocr ships a
+    # matching pair.
     "urdu": "ur",
     "kannada": "kn",
     "telugu": "te",
@@ -35,7 +39,9 @@ class EasyOCREngine(OCREngine):
             self._readers[lang] = easyocr.Reader([lang, "en"], gpu=True, verbose=False)
         return self._readers[lang]
 
-    def recognize(self, crop: Image.Image, script: str) -> str:
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
+        # already does full CRAFT-based detection regardless of input size,
+        # so a whole page needs no special-casing here.
         lang = SCRIPT_TO_LANG[script]
         try:
             reader = self._get_reader(lang)

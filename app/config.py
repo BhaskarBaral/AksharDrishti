@@ -19,10 +19,22 @@ DATASET_REPO = MODEL_REPO_ROOT.parent / "Akshar_dristhii_code"
 ANNOTATED_DIR = DATASET_REPO / "annotated"
 ANNOTATED_SPLITS = ["test", "val", "train"]
 
+# The demo's held-out test set, one folder per language (word_level/,
+# page_level/) plus layout/ -- built by TestData/_tools/build_testdata.py.
+# Every sample the OCR and Layout tabs offer comes from here.
+TESTDATA_DIR = MODEL_REPO_ROOT / "TestData"
+TESTDATA_SCRIPTS = ["devanagari", "bengali", "tamil", "telugu", "urdu", "gujarati", "kannada", "malayalam",
+                    "odia", "punjabi"]
+
 TESSDATA_DIR = MODEL_REPO_ROOT / "ocr-benchmark" / "tessdata"
 TESSERACT_EXE = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 STATIC_DIR = DEMO_ROOT / "static"
+
+# Where citizen-upload "Create Ground Truth & Record" saves land -- this app's
+# own storage, never the dataset repo (see the read-only note above). Each
+# submission gets its own folder: uploads/<script>/<submission_id>/.
+UPLOADS_DIR = DEMO_ROOT / "uploads"
 
 CROP_PAD_PX = 8
 

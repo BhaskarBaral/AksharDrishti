@@ -14,6 +14,16 @@ SCRIPT_TO_LANG = {
     "tamil": "ta",
 }
 
+# The PP-OCRv5 pipeline's own default (text_det_limit_type="min", side 64)
+# never downscales, so a full page goes through PP-OCRv5_server_det at native
+# resolution. On this app's CPU-only paddle build that's slow and, on a
+# ~1600x2200 page, intermittently segfaults / raises RuntimeError("Unknown
+# exception") / silently returns zero boxes (measured 2026-10-27 on the
+# synthetic kv pages). Capping the longest side for the detector only
+# (recognition still runs on full-resolution crops) fixes all three and
+# reads the same pages at CER ~0.02.
+PAGE_DET_LIMIT = {"text_det_limit_side_len": 1280, "text_det_limit_type": "max"}
+
 
 class PaddleOCREngine(OCREngine):
     """Pipelines are loaded lazily and cached per language -- each one is a
@@ -55,13 +65,13 @@ class PaddleOCREngine(OCREngine):
                 )
         return self._pipelines[lang]
 
-    def recognize(self, crop: Image.Image, script: str) -> str:
+    def recognize(self, crop: Image.Image, script: str, is_full_page: bool = False) -> str:
         lang = SCRIPT_TO_LANG[script]
         try:
             pipeline = self._get_pipeline(lang)
             # PaddleOCR follows the OpenCV/BGR convention internally.
             bgr = np.array(crop.convert("RGB"))[:, :, ::-1]
-            results = pipeline.predict(bgr)
+            results = pipeline.predict(bgr, **(PAGE_DET_LIMIT if is_full_page else {}))
             texts = [t for res in results for t in res["rec_texts"]]
             return " ".join(texts).strip()
         except Exception as e:
@@ -70,8 +80,8 @@ class PaddleOCREngine(OCREngine):
     def recognize_page(self, image: Image.Image, script: str) -> list[dict]:
         lang = SCRIPT_TO_LANG[script]
         pipeline = self._get_pipeline(lang)
-        bgr = np.array(image.convert("RGB"))[:, :, ::-1]
-        results = pipeline.predict(bgr)
+        bgr = np.ascontiguousarray(np.array(image.convert("RGB"))[:, :, ::-1])
+        results = pipeline.predict(bgr, **PAGE_DET_LIMIT)
 
         items = []
         for res in results:

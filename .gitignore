@@ -9,9 +9,18 @@ __pycache__/
 # Training artifacts - checkpoints are large and regenerable by re-running training
 training/output/
 training/datasets/
+training/layout/data/
+training/layout/output/
+training/layout/yolo/
+training/layout/runs/
+training/layout/*.log
 
 # Logs
 *.log
 
 # Secrets - real values go in .env (gitignored); see .env.example for the template
 .env
+
+# Citizen-upload ground-truth saves (app/routers/ocr_router.py's create-ground-truth
+# endpoint) - real uploaded documents, potentially containing PII, never committed
+uploads/

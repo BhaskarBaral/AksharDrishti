@@ -1,0 +1,502 @@
+[
+ {
+  "file": "deva_real_0014.jpeg",
+  "groundTruth": "क्षणिक",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0259.jpeg",
+  "groundTruth": "सिचाई",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0215.jpeg",
+  "groundTruth": "कुँए",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0143.jpeg",
+  "groundTruth": "तीन-चौथाई",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0280.jpeg",
+  "groundTruth": "दुर्गन्ध",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0217.jpeg",
+  "groundTruth": "झोले",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0082.jpeg",
+  "groundTruth": "मल्लोय",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0080.jpeg",
+  "groundTruth": "आयत",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0175.jpeg",
+  "groundTruth": "दर्शाते",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0230.jpeg",
+  "groundTruth": "वैश्वीकरण",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0004.jpeg",
+  "groundTruth": "रहेंगी।",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0288.jpeg",
+  "groundTruth": "अंडरस्टेटेड",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0111.jpeg",
+  "groundTruth": "मालकिन",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0102.jpeg",
+  "groundTruth": "रास",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_real_0113.jpeg",
+  "groundTruth": "लाखन",
+  "source": "real",
+  "humanReviewed": true,
+  "collectionSource": [
+   "IIIT-HW-Dev (CVIT) -- https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1380.jpeg",
+  "groundTruth": "विश्व",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1110.jpeg",
+  "groundTruth": "एक",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1354.jpeg",
+  "groundTruth": "किसी",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1670.jpeg",
+  "groundTruth": "तीन",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2012.jpeg",
+  "groundTruth": "इस",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2947.jpeg",
+  "groundTruth": "हो",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1276.jpeg",
+  "groundTruth": "का",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2793.jpeg",
+  "groundTruth": "अनेक",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2377.jpeg",
+  "groundTruth": "वाली",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1413.jpeg",
+  "groundTruth": "होता",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1467.jpeg",
+  "groundTruth": "के",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2119.jpeg",
+  "groundTruth": "और",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1005.jpeg",
+  "groundTruth": ",",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2154.jpeg",
+  "groundTruth": "एक",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2160.jpeg",
+  "groundTruth": "किसी",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1255.jpeg",
+  "groundTruth": "और",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2822.jpeg",
+  "groundTruth": "सकती",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1868.jpeg",
+  "groundTruth": "प्रकृति",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1283.jpeg",
+  "groundTruth": ",",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1584.jpeg",
+  "groundTruth": "होता",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2860.jpeg",
+  "groundTruth": ",",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1086.jpeg",
+  "groundTruth": "भी",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1942.jpeg",
+  "groundTruth": "महत्वपूर्ण",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1623.jpeg",
+  "groundTruth": "गति",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2020.jpeg",
+  "groundTruth": "की",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2964.jpeg",
+  "groundTruth": "अपने",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2415.jpeg",
+  "groundTruth": "कक्षा",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2394.jpeg",
+  "groundTruth": "लिमिटेड",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2171.jpeg",
+  "groundTruth": "काले",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2724.jpeg",
+  "groundTruth": "किया",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1504.jpeg",
+  "groundTruth": "के",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1112.jpeg",
+  "groundTruth": "के",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1514.jpeg",
+  "groundTruth": "करने",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_2179.jpeg",
+  "groundTruth": "ने",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ },
+ {
+  "file": "deva_wordhw_1999.jpeg",
+  "groundTruth": "लिए",
+  "source": "real",
+  "humanReviewed": false,
+  "collectionSource": [
+   "ICDAR 2024 HWD word-level handwriting track (IIIT-H ILOCR) -- https://ilocr.iiit.ac.in/icdar_2024_hwd/dataset.html"
+  ],
+  "license": "unknown-license"
+ }
+]

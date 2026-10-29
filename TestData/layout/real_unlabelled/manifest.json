@@ -1,0 +1,58 @@
+[
+ {
+  "file": "candidate_007.png",
+  "script": "bengali",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "candidate_033.png",
+  "script": "bengali",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "candidate_054.png",
+  "script": "bengali",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "candidate_017.png",
+  "script": "devanagari",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "candidate_073.png",
+  "script": "bengali",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "candidate_153.png",
+  "script": "bengali",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "indicdlp_odia_fm_or_000247_0.png",
+  "script": "odia",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ },
+ {
+  "file": "indicdlp_odia_fm_or_000020_0.png",
+  "script": "odia",
+  "source": "real",
+  "collectionSource": "IndicDLP Forms pages via complex-testset -- MIT",
+  "regions": null
+ }
+]
