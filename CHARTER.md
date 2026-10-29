@@ -41,6 +41,10 @@ _Last updated: 2026-09-08_
 
 ---
 
+**2026-10-29 -- repo made portable.** Demo now has three tabs (OCR, Layout, API Playground). PaddleOCR fine-tuning has been run for all 10 scripts and a DocLayout-YOLO layout detector is wired in (IndicDLP base + our seal/stamp/signature fine-tune). TestData moved into the app; weights tracked via Git LFS / `training/output/*/best_accuracy/inference`; `node_modules` untracked.
+
+---
+
 ## 1. Problem statement
 
 Indian government, legal, and citizen-service records exist in wildly
@@ -155,6 +159,6 @@ Same convention the repo's own README follows: surface weaknesses, don't bury th
 - **Ol Chiki has zero engine support** across all four engines.
 - **Gujarati, Malayalam, Odia, Punjabi** are Tesseract-only — no deep-learning engine reaches them today.
 - **Real handwriting accuracy is still not good enough**, even from the best current engine — fine-tuning is a plan, not a result yet.
-- **No layout or table detection.** Every OCR call operates on one pre-cropped field.
+- **Layout detection is new and partial.** IndicDLP detector covers structure; seals/stamps/signatures come from a fine-tune trained mostly on synthetic pages, so real-page precision is thresholded conservatively.
 - **GPU acceleration isn't guaranteed portable.** `paddlepaddle-gpu`'s Windows wheel availability is CUDA-tag-dependent.
 - **No production hardening.** No auth, rate limiting, or structured logging — fine for a local demo, not for a Bhashini-facing service.

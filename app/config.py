@@ -22,7 +22,7 @@ ANNOTATED_SPLITS = ["test", "val", "train"]
 # The demo's held-out test set, one folder per language (word_level/,
 # page_level/) plus layout/ -- built by TestData/_tools/build_testdata.py.
 # Every sample the OCR and Layout tabs offer comes from here.
-TESTDATA_DIR = MODEL_REPO_ROOT / "TestData"
+TESTDATA_DIR = DEMO_ROOT / "TestData"
 TESTDATA_SCRIPTS = ["devanagari", "bengali", "tamil", "telugu", "urdu", "gujarati", "kannada", "malayalam",
                     "odia", "punjabi"]
 

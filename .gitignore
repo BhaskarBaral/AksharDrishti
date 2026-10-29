@@ -7,7 +7,13 @@ __pycache__/
 *.pyc
 
 # Training artifacts - checkpoints are large and regenerable by re-running training
-training/output/
+training/output/*/*
+!training/output/*/
+!training/output/*/best_accuracy/
+training/output/*/best_accuracy/*
+!training/output/*/best_accuracy/inference/
+# (only the small recognition inference models are tracked -- the full
+# checkpoints, optimizer states and per-epoch dumps stay out)
 training/datasets/
 training/layout/data/
 training/layout/output/
@@ -24,3 +30,10 @@ training/layout/*.log
 # Citizen-upload ground-truth saves (app/routers/ocr_router.py's create-ground-truth
 # endpoint) - real uploaded documents, potentially containing PII, never committed
 uploads/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Local agent worktrees
+.claude/

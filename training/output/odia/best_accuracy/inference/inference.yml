@@ -1,0 +1,113 @@
+Global:
+  model_name: devanagari_PP-OCRv5_mobile_rec
+Hpi:
+  backend_configs:
+    paddle_infer:
+      trt_dynamic_shapes: &id001
+        x:
+        - - 1
+          - 3
+          - 48
+          - 160
+        - - 1
+          - 3
+          - 48
+          - 320
+        - - 8
+          - 3
+          - 48
+          - 3200
+    tensorrt:
+      dynamic_shapes: *id001
+PreProcess:
+  transform_ops:
+  - DecodeImage:
+      channel_first: false
+      img_mode: BGR
+  - MultiLabelEncode:
+      gtc_encode: NRTRLabelEncode
+  - RecResizeImg:
+      image_shape:
+      - 3
+      - 48
+      - 320
+  - KeepKeys:
+      keep_keys:
+      - image
+      - label_ctc
+      - label_gtc
+      - length
+      - valid_ratio
+PostProcess:
+  name: CTCLabelDecode
+  character_dict:
+  - '-'
+  - ।
+  - ଁ
+  - ଂ
+  - ଃ
+  - ଅ
+  - ଆ
+  - ଇ
+  - ଈ
+  - ଉ
+  - ଏ
+  - ଓ
+  - କ
+  - ଖ
+  - ଗ
+  - ଘ
+  - ଙ
+  - ଚ
+  - ଛ
+  - ଜ
+  - ଝ
+  - ଞ
+  - ଟ
+  - ଠ
+  - ଡ
+  - ଢ
+  - ଣ
+  - ତ
+  - ଥ
+  - ଦ
+  - ଧ
+  - ନ
+  - ପ
+  - ଫ
+  - ବ
+  - ଭ
+  - ମ
+  - ଯ
+  - ର
+  - ଲ
+  - ଳ
+  - ଵ
+  - ଶ
+  - ଷ
+  - ସ
+  - ହ
+  - ଼
+  - ା
+  - ି
+  - ୀ
+  - ୁ
+  - ୂ
+  - ୃ
+  - େ
+  - ୈ
+  - ୋ
+  - ୌ
+  - ୍
+  - ୟ
+  - ୦
+  - ୧
+  - ୨
+  - ୩
+  - ୪
+  - ୫
+  - ୬
+  - ୭
+  - ୮
+  - ୯
+  - ୱ

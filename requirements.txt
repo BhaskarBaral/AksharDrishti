@@ -27,3 +27,6 @@ numpy<2
 # paddlepaddle must be pinned to 3.2.2, not the latest 3.3.x: 3.3.0/3.3.1 have a
 # CPU (oneDNN/PIR) regression that raises NotImplementedError on every predict()
 # call -- https://github.com/PaddlePaddle/Paddle/issues/77340
+
+# Layout tab / /v1/layout
+doclayout-yolo

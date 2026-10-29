@@ -14,15 +14,19 @@ enough to keep the original's real-page skill -- while it does learn the new
 classes (synthetic test AP@0.5: seal 0.994, stamp 0.993, signature 0.938).
 
 Separate from layout.py, which only orders OCR lines -- this finds the regions."""
+import os
 from pathlib import Path
 
 from PIL import Image
 
 from app.config import DEMO_ROOT
 
-BASE = Path(r"C:\Users\Legion\Desktop\AksharDristhi\datasets\external\indicdlp-detector-zenodo"
-            r"\doclayout_yolo_indicdlp.pt")
-FINETUNED = DEMO_ROOT / "training" / "layout" / "runs" / "indicdlp_ft" / "weights" / "best.pt"
+# Weights live in weights/ (tracked with Git LFS -- run `git lfs pull` after cloning).
+# Override with INDICDLP_WEIGHTS / LAYOUT_FT_WEIGHTS to point elsewhere.
+BASE = Path(os.environ.get("INDICDLP_WEIGHTS",
+                           DEMO_ROOT / "weights" / "indicdlp" / "doclayout_yolo_indicdlp.pt"))
+FINETUNED = Path(os.environ.get("LAYOUT_FT_WEIGHTS",
+                                DEMO_ROOT / "weights" / "layout_ft" / "best.pt"))
 BASE_IMGSZ = 1024  # the IndicDLP authors' training size
 FINETUNED_IMGSZ = 800  # train_yolo.py's size (1024 overflows a 4 GB GPU)
 EXTRA_CLASSES = {"seal", "stamp", "signature"}

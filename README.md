@@ -7,7 +7,10 @@ A working prototype: browse the Stage 2 annotated dataset and run OCR
 baselines (Tesseract, EasyOCR, PaddleOCR, TrOCR) against it, or against an
 uploaded image, picking which engine(s) to run per request. This is a
 serving/demo layer over the baselines already established in
-`../ocr-benchmark/` — no new model training here.
+`../ocr-benchmark/`. Model training lives in `training/` (PaddleOCR
+recognition fine-tuning for 10 scripts; DocLayout-YOLO fine-tune for
+seal/stamp/signature). The UI has three tabs: OCR, Layout (page-region
+detection) and API Playground (`/v1/*`).
 
 EasyOCR and TrOCR run on GPU (`setup_gpu.ps1` installs a CUDA-enabled torch).
 PaddleOCR attempts GPU too, but falls back to CPU automatically if
@@ -18,9 +21,22 @@ redistributable dependency chain), so it currently runs on CPU here. Separately,
 regression that breaks every `predict()` call outright. See
 `app/engines/paddleocr_engine.py`.
 
-Reads the sibling dataset repo (`../../Akshar_dristhii_code`) **read-only**;
-this project never writes into it and never depends on its code, same
-convention as `../ocr-benchmark/benchmark_ocr.py`.
+Samples for the OCR, Layout and Playground tabs come from the bundled
+`TestData/` folder (inside this app). The older dataset browser still reads
+the optional sibling repo (`../../Akshar_dristhii_code`) **read-only**.
+
+## Setup after cloning
+
+Model weights are tracked with **Git LFS** -- install it and run
+`git lfs pull` (or clone with LFS installed):
+
+- `weights/indicdlp/doclayout_yolo_indicdlp.pt` -- IndicDLP layout detector
+  (CC-BY-4.0, https://zenodo.org/records/15881917); override with `INDICDLP_WEIGHTS`.
+- `weights/layout_ft/best.pt` -- our seal/stamp/signature fine-tune; override with `LAYOUT_FT_WEIGHTS`.
+- `training/output/<script>/best_accuracy/inference/` -- fine-tuned PaddleOCR
+  recognition models (plain git, ~92 MB total). Full training checkpoints are not tracked.
+
+Frontend: `cd frontend && npm install` (`node_modules/` is not tracked).
 
 ## Layout (modular by concern)
 

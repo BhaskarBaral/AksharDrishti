@@ -12,7 +12,7 @@ from fastapi.responses import FileResponse
 from PIL import Image
 
 from app import ulca
-from app.config import DATASET_REPO, DEMO_ROOT
+from app.config import TESTDATA_DIR
 from app.engines.registry import engines_for_script
 from app.inference import INFERENCE_LOCK
 from app.layout_detector import detector
@@ -280,13 +280,14 @@ def layout_detect(file: UploadFile | None = File(None), threshold: str = Form("0
 @router.get("/samples/{script}")
 def sample(script: str, level: str = "page"):
     """One bundled sample image per script, so the playground (and curl users)
-    can try the API without hunting for a file: a clean synthetic key-value
+    can try the API without hunting for a file: a synthetic handwritten
     form page for level=page, a real handwritten word crop for level=word."""
     script = _check_script(script)
     if level == "page":
-        candidates = sorted((DATASET_REPO / "synthetic" / script / "kv" / "clean").glob("*.png"))
+        folder = TESTDATA_DIR / script / "page_level"
+        candidates = sorted(p for p in folder.glob("*") if p.suffix.lower() in (".jpeg", ".jpg", ".png"))
     elif level == "word":
-        folder = DEMO_ROOT / "test_data" / script
+        folder = TESTDATA_DIR / script / "word_level"
         candidates = sorted(p for p in folder.glob("*") if p.suffix.lower() in (".jpeg", ".jpg", ".png"))
     else:
         raise HTTPException(400, f"Invalid level {level!r} -- one of: {', '.join(LEVELS)}")
